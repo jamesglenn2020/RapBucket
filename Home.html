@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--suppress ALL -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RapSharks.com</title>
+    <link rel="stylesheet"
+          href="Rapstyle.css">
+</head>
+<body>
+<header>
+    <div id="sitebranding">
+        <h1>RapSharks.com</h1>
+    </div>
+    <div id="tagline">
+        <p>A Place For Undiscovered Rappers To Post Their Music.</p>
+    </div>
+</header>
+<nav>
+    <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Lyrics.html">Lyrics</a></li>
+        <li><a href="Music.html">Music</a></li>
+        <li><a href="Posting.html">Posting</a></li>
+</ul>
+</nav>
+<div id="bodycontent">
+    <!-- SiteSearch Google -->
+    <form method="get" action="http://www.google.com/search">
+        <label id="t" for="q">Search</label>
+        <input id="q" name="q" size="20" maxlength="255" value="" type="text" class="searchbar"
+               placeholder="Enter search here..." autocomplete="off"
+               onclick="this.select();updateStylesheet('.searchbar', 'color',
+               'black');"/>
+        <input name="domains" value="http://www.RapBucket.com/" type="hidden"/>
+    </form>
+    <!-- SiteSearch Google -->
+    <h2>Welcome To Our Posting Website For New Rappers</h2>
+    <p class="Hook">Make Yourself Known</p>
+    <img src="logo_2.png"
+         height="372"
+         width="250"
+         alt="A picture of a shark with a capitalized 'R' behind it"
+         id="logo"/>
+    <div class="homepage">
+        <p>No more struggling over getting your songs out for people to hear. Share your music with the world for free!</p>
+        <p>Its easy you send us your song and we take care of the rest. We make sure that every song we recieve is posted.</p>
+    </div>
+    <p></p>
+</div>
+<script>
+    function updateStylesheet(selector, property, value) {
+        let theStylesheet = document.styleSheets[(document.styleSheets.length - 1)];
+        if (theStylesheet === undefined) {
+            return false;
+        }
+
+        for (let i = 0; i < theStylesheet.cssRules.length; i++) {
+            let rule = theStylesheet.cssRules[i];
+            if (rule.selectorText === selector) {
+                rule.style[property] = value;
+                return true;
+            }
+        }
+        theStylesheet.insertRule(selector + " { " + property + ": " + value + "; }", 0);
+        return true;
+    }
+</script>
+</body>
+</html>

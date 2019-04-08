@@ -1,0 +1,207 @@
+/*
+This is the style
+sheet for the website RapBucket.com
+*/
+#q{
+    position: absolute;
+    top: -22px;
+    left: 850px;
+}
+#t{
+    position: absolute;
+    top: -22px;
+    left: 790px;
+    color: #ffffff
+}
+body{
+    background-color: aliceblue;
+}
+/*
+This is for the header content.
+ */
+h1 {
+    font-family: Candara, "trebuchet MS", Helvetica, arial, sans-serif;
+    font-size: x-large;
+    color: white;
+    padding-top: 2em;
+    padding-bottom: .2em;
+    padding-left: .4em;
+    margin: 0;
+    background: black url(header.png) repeat-y right;
+    line-height: 1;
+}
+/*
+This section is for the bodycontent id.
+ */
+h2 {
+    font-size: 150%;
+    font-weight: normal;
+    color: black;
+    padding-top: 15px;
+    margin: 0;
+}
+h2 {
+    text-shadow: 5px 5px 2px lightgray;
+}
+#logo {
+    float: left;
+    margin: 2px 10px 0;
+}
+.Hook{
+    background: #9b9b9b;
+    font-weight: bold;
+    line-height: 2em;
+    text-align: center;
+    font-family: "Comic Sans MS", serif;
+    font-size: larger;
+}
+.homepage{
+    border: 3px solid blue;
+    height: 372px;
+    border-radius: 20px;
+}
+/*
+This section is for the navigational bar setup.
+*/
+nav{
+    width: 180px;
+    height: 485px;
+    background: black url(nav.png) no-repeat;
+    display: block;/* Only for !\IEP or less */
+}
+nav ul{
+    margin: 0;
+    padding-top: 15px;
+}
+ul{
+    list-style-type: none;
+}
+a:link{
+    color: white;
+}
+a:visited{
+    color: white;
+}
+a:hover {
+    text-decoration: #9e0700;
+    color: white;
+    background:none;
+}
+li {
+    list-style: none;
+}
+/*
+This positions elements of the website, and what the look like
+ */
+#navigation, #bodycontent, #header{
+    position: absolute;
+}
+#navigation, #bodycontent{
+    top: 6.54em;
+}
+#bodycontent{
+    left: 200px;
+}
+#header{
+    width: 100%;
+}
+#tagline{
+    width: 100%;
+}
+#tagline p {
+    font-style: italic;
+    font-family: Georgia, times, serif;
+    color: white;
+    border-top: 3px solid dimgrey;
+    border-bottom: 3px solid dimgrey;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    padding-left: .8em;
+    margin: 0;
+    background: black url(header.png) repeat-y right;
+}
+.lyriclogo{
+    float: right;
+    background-blend-mode: color-burn;
+}
+body{
+    font-family: helvetica, arial, sans-serif;
+    line-height: 125%;
+    padding: 0;
+    margin: 0;
+}
+/*
+song publication
+*/
+form.contact fieldset{
+    border: 3px solid blue;
+    padding: 30px;
+    border-radius: 20px;
+}
+form.contact legend{
+    font-weight: bold;
+    font-size: small;
+    color: black;
+    padding:5px;
+    border: 3px solid blue;
+}
+form.contact{
+    padding:0;
+    margin-top: -15px;
+    line-height: 150%;
+}
+form.contact label {
+    font-weight: bold;
+    font-size: small;
+    color: black;
+}
+form.contact label.fixedwidth{
+    display: block;
+    width: 240px;
+    float: left;
+}
+form.contact .buttonarea input {
+    background: black;
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+    border: 1px solid white;
+}
+form.contact .buttonarea{
+    text-align: center;
+    padding: 4px;
+    background-color: black;
+}
+#postingshark{
+    float: right;
+}
+/*
+This is the lyric box for the Lyric.html page
+ */
+form.lyrics legend{
+    font-weight: bold;
+    font-size: small;
+    color: black;
+    padding:5px;
+}
+form.lyrics fieldset{
+    border: 4px solid blue;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 10px;
+    background: gray;
+}
+em{
+    font-family: Algerian, serif;
+    font-weight: bolder;
+    color: black;
+    font-size: large;
+    font-style: normal;
+    text-shadow: 3px 3px 2px red;
+}
+form.lyrics fieldset p{
+    font-weight: bold;
+    font-size: medium;
+    color: black;
+    padding:5px;
+}

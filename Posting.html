@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RapSharks.com</title>
+    <link rel="stylesheet"
+          href="Rapstyle.css">
+</head>
+<body>
+<header>
+    <div id="sitebranding">
+        <h1>RapSharks.com</h1>
+    </div>
+    <div id="tagline">
+        <p>A Place For Undiscovered Rappers To Post Their Music.</p>
+    </div>
+</header>
+<nav>
+    <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Lyrics.html">Lyrics</a></li>
+        <li><a href="Music.html">Music</a></li>
+        <li><a href="Posting.html">Posting</a></li>
+    </ul>
+</nav>
+<div id="bodycontent">
+    <!-- SiteSearch Google -->
+    <form method="get" action="http://www.google.com/search">
+        <label id="t" for="q">Search</label>
+        <input id="q" name="q" size="20" maxlength="255" value="" type="text" class="searchbar"
+               placeholder="Enter search here..." autocomplete="off"
+               onclick="this.select();updateStylesheet('.searchbar', 'color',
+               'black');"/>
+        <input name="domains" value="http://www.RapBucket.com/" type="hidden"/>
+    </form>
+    <!-- SiteSearch Google -->
+    <h2>Looking To Post Your Website</h2>
+    <p>Here on Rap Sharks we try to make posting a new song as easy as
+       we can by having you fill out the spaces below.</p>
+    <form action="" method="post" class="contact">
+        <fieldset>
+            <legend>Post Your Songs Lyrics Here</legend>
+            <div>
+                <p>Rap Shark may share information you give us here with other
+                   like-minded people or websites to publish your song. Please confirm
+                   if you are happy for us to do this.</p>
+                <input type="checkbox" name="publicized" id="publicized"
+                       checked="checked"/>
+                <label for="publicized">I am happy for this event to be publicized
+                                        outside of and beyond RapSharks.com, where ever possible</label>
+            </div>
+            <div class="buttonarea">
+                <a href="form.html">Post Music Here</a>
+            </div>
+        </fieldset>
+    </form>
+</div>
+<script>
+    function updateStylesheet(selector, property, value) {
+        let theStylesheet = document.styleSheets[(document.styleSheets.length - 1)];
+        if (theStylesheet === undefined) {
+            return false;
+        }
+
+        for (let i = 0; i < theStylesheet.cssRules.length; i++) {
+            let rule = theStylesheet.cssRules[i];
+            if (rule.selectorText === selector) {
+                rule.style[property] = value;
+                return true;
+            }
+        }
+        theStylesheet.insertRule(selector + " { " + property + ": " + value + "; }", 0);
+        return true;
+    }
+</script>
+</body>
+</html>
